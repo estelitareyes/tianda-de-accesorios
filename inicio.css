@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+  }
+  .header {
+    background-color: #ffffff; 
+    color: white; 
+    padding: 20px;
+  }
+  
+  .header-background {
+    background-image: url('imagenes/fondooo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0; 
+    margin-bottom: 20px;
+  }
+  
+  
+  .main-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 40px;
+    gap: 30px;
+  }
+  
+  .section-box {
+    width: 30%; 
+    border: 3px solid #d4af37; 
+    padding: 20px; 
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+  }
+  
+  h1 {
+    font-size: 2.5em; 
+    text-transform: uppercase; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    margin-bottom: 10px; 
+    letter-spacing: 1px; 
+    z-index: 1; 
+  }
+  
+  .header-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+  }
+  
+  .header {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 12px;
+  }
+  
+  .logo {
+    height: 100px; 
+    margin-right: 50px; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 25px; 
+    text-decoration: none;
+    color: #000000; 
+  }
+  
+  .nav-item:hover {
+    color: #d7af35; 
+  }
+  
+  .nav-item {
+    margin-right: 30px;
+  }
+  
+  .search-form {
+    margin-left: 150px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #e7e1e1;
+    border-radius: 5px;
+  }
+  
+  .search-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0c4a258;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.4s ease;
+    height: 100%;
+}
+
+.carousel-images img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: none; 
+}
+
+.carousel-images img.active {
+    display: block; 
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background: rgba(255, 255, 255, 0.31);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}

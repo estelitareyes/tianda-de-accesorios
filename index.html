@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Borcelle</title>
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="imagenesinicio/logo6.png" alt="Logo de la Tienda" class="logo">
+            <nav class="navbar">
+                <a href="index.html" class="nav-item">Inicio</a>
+                <a href="productos.html" class="nav-item">Productos</a>
+                <a href="Servicios/servicios.html" class="nav-item">Servicios</a>
+                <a href="GALERIA-DWFE/galeria.html" class="nav-item">Galería</a>
+                <a href="acerca-de/acerca-de.html"class= "nav-item">Sobre Nosotros</a>
+                <a href="contacto/contacto.html" class="nav-item">Contacto</a>
+
+                <form action="#" method="get" class="search-form">
+                    <input type="text" placeholder="Buscar..." name="search" class="search-input">
+                    <button type="submit" class="search-btn">🔍</button>
+                </form>
+            </nav>
+        </header>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="imagenesinicio/imagen2.png" class="active" alt="Imagen 1">
+                <img src="imagenesinicio/imagen1.png"alt="Imagen 2">
+                <img src="imagenesinicio/imagen3.png" alt="Imagen 3">
+                <img src="imagenesinicio/imagen4.png" alt="Imagen 4">
+            </div>
+
+            <div class="carousel-controls">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+
+</body>
+</html>
