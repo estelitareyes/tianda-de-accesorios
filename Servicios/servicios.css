@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; 
+}
+
+.section-box {
+  width: 30%; 
+  border: 3px solid #d4af37; 
+  padding: 20px; 
+  background-color: white;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 10px; 
+}
+
+.header {
+  background-color: #fff;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 12px;
+}
+
+.logo {
+  height: 100px; 
+  margin-right: 50px; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 25px; 
+  text-decoration: none;
+  color: #000000; 
+}
+
+.nav-item:hover {
+  color: #d7af35; 
+}
+
+/* .navbar {
+  display: flex;
+  align-items: center;
+} */
+
+.nav-item {
+  margin-right: 30px;
+}
+
+.search-form {
+  margin-left: 150px; 
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #e7e1e1;
+  border-radius: 5px;
+}
+
+.search-btn {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f0c4a258;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#contenido {
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px;
+}
+
+#agendar, #testimonios, #calificacion {
+  width: 30%; 
+  border: 3px solid #d4af37; 
+  padding: 20px; 
+  background-color: white;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 10px; 
+}
+
+#calificacion {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d7af35; 
+}
+
+.oculto {
+  display: none;
+}
+
+.testimonio {
+  background-color: #f9f9f9; 
+  padding: 8px; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+}
+
+#testimonio-lista p {
+  font-style: italic; 
+  margin: 5px 0; 
+}
+
+.botones-servicios {
+  text-align: center;
+  margin: 20px;
+}
+
+.botones-servicios button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d7af35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botones-servicios button:hover {
+  background-color: #ecc48c; 
+}
+
+#detalle-servicios {
+  padding: 50px;
+}
+
+#detalle-servicios .servicio {
+  display: none; 
+}
+
+.servicio-contenido {
+  display: flex;
+  align-items: center; 
+  padding: 20px;
+  background-color: white; 
+  margin-bottom: 20px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+}
+
+.descripcion {
+  flex: 1; 
+  padding-right: 20px; 
+  text-align: left; 
+}
+
+.descripcion h3 {
+  margin: 0 0 10px; 
+  font-size: 20px;
+}
+
+.servicio-contenido img {
+  width: 300px; 
+  max-width: 100%; 
+  margin-left: 20px; 
+}
+
+.servicio h3 {
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.formulario {
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario textarea {
+  resize: none;
+}
+
+.formulario input[type="submit"] {
+  background-color: #d7af35;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #ecc48c;
+}
+
+.estrellas {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.estrella {
+  color: gray;
+}
+
+.estrella.selected {
+  color: gold;
+}
+
+#lista-testimonios {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d7af35;
+}
+
+#lista-testimonios .testimonio {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#lista-testimonios .testimonio:last-child {
+  border-bottom: none;
+}
+
+.testimonio h4 {
+  margin: 5px 0;
+}
+
+.testimonio p {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #2b2a29;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  position: relative; 
+  bottom: 0; 
+  width: 100%; 
+  margin-top: 20px; 
+}
+
+.footer-content p {
+  margin: 5px 0; 
+  font-size: 0.9em; 
+}

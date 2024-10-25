@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Borcelle</title>
+  <link rel="stylesheet" href="servicios.css">
+</head>
+<body>
+
+  <header class="header">
+    <img src="../imagenesinicio/logo6.png" alt="Logo de la Tienda" class="logo">
+    <nav class="navbar">
+      <a href="../index.html" class="nav-item">Inicio</a>
+      <a href="../productos.html" class="nav-item">Productos</a>
+      <a href="servicios.html" class="nav-item">Servicios</a>
+      <a href="../GALERIA-DWFE/galeria.html" class="nav-item">Galería</a>
+      <a href="../acerca-de/acerca-de.html" class="nav-item">Sobre Nosotros</a>
+      <a href="../contacto/contacto.html" class="nav-item">Contacto</a>
+      <form action="#" method="get" class="search-form">
+        <input type="text" placeholder="Buscar..." name="search" class="search-input">
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+    </nav>
+  </header>
+
+  <div class="botones-servicios">
+    <button onclick="mostrar('reparacion')">Asesoría de Compra</button>
+    <button onclick="mostrar('personalizacion')">Grabado</button>
+    <button onclick="mostrar('limpieza')">Limpieza y Mantenimiento</button>
+    <button onclick="mostrar('valuacion')">Consultas de Estilo</button>
+    <button onclick="mostrar('diseño')">Diseño Personalizado</button>
+    <button onclick="mostrar('ajuste')">Ajuste de Talla</button>
+    <button onclick="mostrar('restauracion')">Envío y Entrega</button>
+  </div>
+
+  <section id="detalle-servicios">
+    <div id="reparacion" class="servicio oculto">
+        <h3>Asesoría de Compra</h3>
+        <div class="servicio-contenido">
+            <div class="descripcion">
+                <p>Ofrecemos una atención personalizada para ayudarte a seleccionar el producto ideal. Nuestro equipo está disponible para resolver tus dudas y guiarte en tu decisión de compra, asegurando que encuentres lo que realmente necesitas.</p>
+            </div>
+            <img src="imagenes/asesoria.jpeg" alt="Mantenimiento de Joyas">
+        </div>
+    </div>
+    <div id="personalizacion" class="servicio oculto">
+        <h3>Grabado</h3>
+        <div class="servicio-contenido">
+            <div class="descripcion">
+                <p>Personaliza tus productos con nuestro servicio de grabado. Ya sea para un regalo especial o para dar un toque único a tus artículos, ofrecemos opciones de grabado de alta calidad que se adaptan a tus preferencias.</p>
+            </div>
+            <img src="imagenes/grabado.jpg" alt="Grabado">
+        </div>
+    </div>
+    <div id="limpieza" class="servicio oculto">
+        <h3>Limpieza y Mantenimiento</h3>
+        <div class="servicio-contenido">
+            <div class="descripcion">
+                <p>Mantén tus productos en perfecto estado con nuestro servicio de limpieza y mantenimiento. Utilizamos técnicas y productos especializados para prolongar la vida útil de tus artículos, asegurando que siempre luzcan como nuevos.</p>
+            </div>
+            <img src="imagenes/limpieza.png" alt="Limpieza y Mantenimiento">
+        </div>
+    </div>
+    <div id="valuacion" class="servicio oculto">
+        <h3>Consultas de Estilo</h3>
+        <div class="servicio-contenido">
+            <div class="descripcion">
+                <p>Nuestro servicio de consultas de estilo te ofrece asesoría experta para ayudarte a encontrar la mejor manera de utilizar nuestros productos. Nuestros estilistas están listos para ofrecerte consejos y recomendaciones adaptadas a tu estilo personal.</p>
+            </div>
+            <img src="imagenes/estilos.jpg" alt="Valuación de Joyas">
+        </div>
+    </div>
+    <div id="diseño" class="servicio oculto">
+        <h3>Diseño Personalizado</h3>
+        <div class="servicio-contenido">
+            <div class="descripcion">
+                <p>Dale rienda suelta a tu creatividad con nuestro servicio de diseño personalizado. Trabajamos contigo para crear productos únicos que reflejen tu estilo y personalidad, asegurando que cada pieza sea realmente especial.</p>
+            </div>
+            <img src="imagenes/diseñoo.jpg" alt="Diseño Personalizado">
+        </div>
+    </div>
+    <div id="ajuste" class="servicio oculto">
+        <h3>Ajuste de Talla</h3>
+        <div class="servicio-contenido">
+            <div class="descripcion">
+                <p>Si necesitas que tus prendas o accesorios se ajusten perfectamente, nuestro servicio de ajuste de talla es la solución ideal. Ofrecemos ajustes rápidos y precisos para garantizar que te sientas cómodo y seguro con tus compras.</p>
+            </div>
+            <img src="imagenes/redeminsiones.jpg" alt="Ajuste de Talla">
+        </div>
+    </div>
+    <div id="restauracion" class="servicio oculto">
+        <h3>Envío y Entrega</h3>
+        <div class="servicio-contenido">
+            <div class="descripcion">
+                <p>Nos aseguramos de que tus productos lleguen a ti de manera rápida y segura. Ofrecemos diversas opciones de envío y un servicio de entrega confiable, para que puedas disfrutar de tus compras sin preocupaciones.</p>
+            </div>
+            <img src="imagenes/caja.jpeg" alt="Reparación de Joyas">
+        </div>
+    </div>
+  </section>
+
+  <div class="main-container">
+ 
+    <div id="agendar" class="section-box">
+      <h2>Agenda un Servicio</h2>
+      <form class="formulario" id="form-agenda">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="fecha">Fecha de la Cita:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <input type="submit" value="Agendar">
+      </form>
+    </div>
+
+    <div id="testimonios" class="section-box">
+      <h2>Testimonios de Nuestros Clientes</h2>
+      <div id="lista-testimonios">
+        <div class="testimonio">
+          <h4>Calificación: 5 estrellas</h4>
+          <p>¡La atención fue excelente y el servicio rápido!</p>
+        </div>
+        <div class="testimonio">
+          <h4>Calificación: 4 estrellas</h4>
+          <p>La joya quedó perfecta, pero el tiempo de espera fue un poco largo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div id="calificacion" class="section-box">
+      <h2>Deja tu Comentario</h2>
+      <form id="form-calificacion" class="formulario">
+        <label for="opinion">¿Cómo fue tu experiencia?</label>
+        <textarea id="opinion" name="opinion" rows="4" required></textarea>
+
+        <label for="rating">Calificación:</label>
+        <div id="rating" class="estrellas">
+          <span class="estrella" data-value="1">★</span>
+          <span class="estrella" data-value="2">★</span>
+          <span class="estrella" data-value="3">★</span>
+          <span class="estrella" data-value="4">★</span>
+          <span class="estrella" data-value="5">★</span>
+        </div>
+        <input type="hidden" id="calificacion" name="calificacion" value="">
+
+        <input type="submit" value="Enviar Comentario">
+      </form>
+    </div>
+
+    <div id="preguntas-frecuentes" class="section-box">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="pregunta">
+        <h4>¿Cuánto tarda el envío?</h4>
+        <p>El tiempo de envío depende de tu ubicación, pero normalmente entre 3 y 5 días hábiles.</p>
+      </div>
+      
+      <div class="pregunta">
+        <h4>¿Cuál es el plazo para solicitar un ajuste de talla?</h4>
+        <p>Tienes hasta 30 días después de recibir el producto para solicitar ajustes de talla.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2024. Todos los derechos reservados.</p>
+      <p>Contacto: info@borcelle.com | Teléfono: (123) 456-7890</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
